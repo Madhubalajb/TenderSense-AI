@@ -1,4 +1,4 @@
-# 🏛️ TenderSense AI
+# 🏛️ Tendra AI
 ### Intelligent Tender Evaluation for a Transparent Bharat
 
 > *"Turning paperwork into clarity - one tender at a time."*
@@ -9,7 +9,7 @@ AI that reads tender documents and bids, checks every eligibility criterion, exp
 
 ## 📋 Table of Contents
 1. [The Problem](#1-the-problem)
-2. [What TenderSense AI Does](#2-what-tendersense-ai-does)
+2. [What Tendra AI Does](#2-what-Tendra-ai-does)
 3. [How It Solves Real Pain Points](#3-how-it-solves-real-pain-points)
 4. [Technical Approach](#4-technical-approach)
 5. [Architecture - Free & Open-Source Stack](#5-architecture--free--open-source-stack)
@@ -35,7 +35,7 @@ The current manual process has three structural failures:
 
 ---
 
-## 2. What TenderSense AI Does
+## 2. What Tendra AI Does
 
 A **browser-based assistant** - no installation, no cloud dependency. Five simple steps:
 
@@ -53,7 +53,7 @@ A **browser-based assistant** - no installation, no cloud dependency. Five simpl
 
 ## 3. How It Solves Real Pain Points
 
-| Pain Point | TenderSense AI Fix | Benefit |
+| Pain Point | Tendra AI Fix | Benefit |
 |------------|-------------------|---------|
 | 120+ manual checks | All checks automated simultaneously | ~75% less officer verification time |
 | Inconsistent evaluation | Same logic applied identically every time | Zero cross-evaluator inconsistency |
@@ -173,7 +173,7 @@ No verdict is ever just "Pass" or "Fail". Every result shows:
 
 ## 7. What Makes This Different
 
-| What Existing Tools Lack | What TenderSense AI Provides |
+| What Existing Tools Lack | What Tendra AI Provides |
 |--------------------------|------------------------------|
 | Built for Western English docs - fail on ₹ lakh/crore, GST numbers, Indian FY formats | Custom NER trained specifically for Indian government documents |
 | No source-level explanation - just a score or flag | Every verdict shows: exact document, page, extracted value, and plain-language reason |
@@ -231,7 +231,7 @@ We are upfront about what the system cannot do:
 
 ### ✅ What a Successful Round 2 Demo Looks Like
 
-A simulated officer uploads **one CRPF tender + five bidder packages**. TenderSense AI produces a live Criteria Matrix, Evaluation Dashboard, and Review Queue.
+A simulated officer uploads **one CRPF tender + five bidder packages**. Tendra AI produces a live Criteria Matrix, Evaluation Dashboard, and Review Queue.
 
 The demo walks through two bidders:
 - **Bidder A** (clearly eligible) - source-traced passing verdicts for every criterion
@@ -259,6 +259,6 @@ Deployment         : Docker Compose · NIC MeghRaj / Local Server / Laptop
 
 **We build for Bharat - not for the benchmark.**
 
-*TenderSense AI · AI for Bharat Hackathon*
+*Tendra AI · AI for Bharat Hackathon*
 
 </div>
