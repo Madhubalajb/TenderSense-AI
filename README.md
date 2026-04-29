@@ -1,8 +1,5 @@
 # 🏛️ TenderSense AI
 ### Intelligent Tender Evaluation for a Transparent Bharat
-> **AI for Bharat Hackathon · CRPF Challenge · Round 1 Submission**
-
----
 
 > *"Turning paperwork into clarity - one tender at a time."*
 
