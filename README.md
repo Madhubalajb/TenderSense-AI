@@ -1,5 +1,5 @@
 # 🏛️ TenderSense AI
-### Intelligent Tender Evaluation for Government Procurement
+### Intelligent Tender Evaluation for a Transparent Bharat
 > **AI for Bharat Hackathon · CRPF Challenge · Round 1 Submission**
 
 ---
@@ -49,6 +49,8 @@ A **browser-based assistant** - no installation, no cloud dependency. Five simpl
 | **3. Upload Bids** | Drop all bidder packages in one batch | Every document parsed; every criterion checked automatically |
 | **4. View Dashboard** | Open the evaluation report | Pass / Fail / Review per criterion, per bidder - with reasons |
 | **5. Export** | Sign off and download the report | PDF + Excel report with full, timestamped audit trail |
+
+<img width="1340" height="1340" alt="image" src="https://github.com/user-attachments/assets/597caa29-b587-4f0f-b7be-989a86269cfc" />
 
 ---
 
