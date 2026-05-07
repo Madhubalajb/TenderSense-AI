@@ -1,0 +1,104 @@
+{
+  "criteria": [
+    {
+      "id": "C001",
+      "criterion_text": "EMD Rs. 17,600/- valid 180 days from date of opening in favour of DIG GC Bilaspur payable at SBI Main Branch Bilaspur",
+      "category": "Financial",
+      "mandatory": true,
+      "threshold_value": "17600",
+      "threshold_unit": "INR",
+      "evidence_type": "Bank draft/BG submitted with bid",
+      "years_required": null,
+      "section_reference": null,
+      "keywords": []
+    },
+    {
+      "id": "C002",
+      "criterion_text": "Minimum average annual financial turnover of the tenderer should be at least 30% of the estimated cost put to tender during the last three years ending 31st March of the previous financial year",
+      "category": "Financial",
+      "mandatory": true,
+      "threshold_value": "30",
+      "threshold_unit": "Percentage of estimated cost",
+      "years_required": 3,
+      "section_reference": "Page 8 of 31",
+      "keywords": [
+        "turnover",
+        "annual turnover"
+      ],
+      "evidence_type": "CA-certified audited balance sheet with UDIN number"
+    },
+    {
+      "id": "C003",
+      "criterion_text": "One similar completed work costing not less than 80% of the estimated cost put to tender in CRPF/CPWD/MES/NBCC/BRO/State PWD during the last 03 financial years",
+      "category": "Technical",
+      "mandatory": true,
+      "threshold_value": "80",
+      "threshold_unit": "Percentage of estimated cost",
+      "evidence_type": "Completion certificate from Executive Engineer or above",
+      "years_required": null,
+      "section_reference": null,
+      "keywords": []
+    },
+    {
+      "id": "C004",
+      "criterion_text": "Two similar completed works costing not less than 60% of the estimated cost put to tender in CRPF/CPWD/MES/NBCC/BRO/State PWD during the last 03 financial years",
+      "category": "Technical",
+      "mandatory": true,
+      "threshold_value": "60",
+      "threshold_unit": "Percentage of estimated cost",
+      "evidence_type": "Completion certificate from Executive Engineer or above",
+      "years_required": null,
+      "section_reference": null,
+      "keywords": []
+    },
+    {
+      "id": "C005",
+      "criterion_text": "Three similar completed works costing not less than 40% of the estimated cost put to tender in CRPF/CPWD/MES/NBCC/BRO/State PWD during the last 03 financial years",
+      "category": "Technical",
+      "mandatory": true,
+      "threshold_value": "40",
+      "threshold_unit": "Percentage of estimated cost",
+      "evidence_type": "Completion certificate from Executive Engineer or above",
+      "years_required": null,
+      "section_reference": null,
+      "keywords": []
+    },
+    {
+      "id": "C006",
+      "criterion_text": "Valid registration as Contractor with CPWD/MES/NBCC/BRO/State PWD in respective categories",
+      "category": "Compliance",
+      "mandatory": true,
+      "evidence_type": "Registration certificate valid on the last date of submission",
+      "threshold_value": null,
+      "threshold_unit": null,
+      "years_required": null,
+      "section_reference": null,
+      "keywords": []
+    },
+    {
+      "id": "C007",
+      "criterion_text": "Copy of valid registration certificate of GST, EPF and ESIC",
+      "category": "Compliance",
+      "mandatory": true,
+      "evidence_type": "GST certificate, EPF registration, ESIC registration",
+      "threshold_value": null,
+      "threshold_unit": null,
+      "years_required": null,
+      "section_reference": null,
+      "keywords": []
+    },
+    {
+      "id": "C008",
+      "criterion_text": "Contractor should have a valid PAN Number",
+      "category": "Financial",
+      "mandatory": true,
+      "threshold_value": null,
+      "threshold_unit": null,
+      "years_required": null,
+      "section_reference": "Added manually",
+      "keywords": []
+    }
+  ],
+  "locked_at": "2026-05-07 22:31:33",
+  "locked_by": "admin@crpf.gov.in"
+}
