@@ -69,9 +69,9 @@ A **browser-based assistant** - no installation, no cloud dependency. Five simpl
 
 ### Step 1 - Reading the Tender Document
 
-- Uploaded tender converted to text using **Apache Tika** (free, open-source)
+- Uploaded tender converted to text using **PyMuPDF** (free, open-source)
 - For scanned tenders: **Tesseract OCR** with **OpenCV** image clean-up
-- **Mistral-7B via Ollama** (runs locally, no API key) reads the text and extracts every eligibility criterion
+- **llama-3.3-70b** LLM reads the text and extracts every eligibility criterion
   - Extracts: criterion type, mandatory/optional, threshold value, section reference
   - Handles criteria buried in legal prose, cross-references, and conditional clauses
 - Officer reviews and approves the extracted criteria list before evaluation begins
@@ -91,7 +91,7 @@ A **browser-based assistant** - no installation, no cloud dependency. Five simpl
 - **Qualitative criteria** (e.g. "government supply experience"): semantic similarity using **sentence-transformers** (free, runs offline)
   - Understands that "Revenue from Operations" and "Annual Turnover" mean the same thing
   - Not keyword matching - looks for *meaning*, not exact words
-- **Complex criteria**: Mistral-7B reasons step-by-step and shows its reasoning to the officer
+- **Complex criteria**: llama-3.3-70b reasons step-by-step and shows its reasoning to the officer
 
 | Verdict | Condition | Officer Action Needed? |
 |---------|-----------|----------------------|
@@ -129,9 +129,9 @@ No verdict is ever just "Pass" or "Fail". Every result shows:
 
 | What It Does | Tool Used | Why This Tool |
 |-------------|-----------|---------------|
-| Document ingestion (all formats) | **Apache Tika** | Handles PDF, Word, Excel, images - free |
+| Document ingestion (all formats) | **PyMuPDF** | Handles PDF, Word, Excel free |
 | OCR (scanned pages) | **Tesseract 5.0 + OpenCV** | Supports 15+ Indian scripts natively - free |
-| LLM for extraction & reasoning | **Mistral-7B via Ollama** | Runs on a basic server - no API key needed |
+| LLM for extraction & reasoning | **llama-3.3-70b** 
 | Indian-specific entity recognition | **spaCy + custom fine-tune** | Recognises ₹ lakh/crore, GST numbers, Indian FY format |
 | Semantic matching | **sentence-transformers (MiniLM)** | Multilingual, runs on CPU, free |
 | Regional language translation | **IndicTrans2 (AI4Bharat)** | Best Indic-English translation model - open-source |
@@ -141,7 +141,7 @@ No verdict is ever just "Pass" or "Fail". Every result shows:
 | Database & audit log | **PostgreSQL** | Free, reliable, exportable to CSV |
 | Report generation | **ReportLab + openpyxl** | Pure Python - no licence cost |
 
-### Deployment Options
+### Deployment Options (For Future)
 
 | Tier | Infrastructure | Use Case |
 |------|---------------|----------|
@@ -155,15 +155,15 @@ No verdict is ever just "Pass" or "Fail". Every result shows:
 
 ---
 
-## 6. Works Offline · Works in Indian Languages
+## 6. Works Offline · Works in Indian Languages (For Future)
 
-### Offline & Low-Bandwidth
+### Offline & Low-Bandwidth (For Future)
 - Full evaluation works with **zero internet** - all AI models run locally
 - **Celery queue** lets officers submit documents and collect results later - no live connection needed
 - If a document is too blurry to read reliably, the system **flags it for manual review** rather than guessing
 - Laptop tier available for field-office or evaluation committee use
 
-### Regional Languages
+### Regional Languages (For Future)
 - OCR supports **Hindi, Tamil, Telugu, Bengali, Marathi, Kannada** and more via Tesseract
 - **IndicTrans2** translates regional-language documents for matching - officer always sees original text
 - **MuRIL** allows direct Hindi-to-Hindi matching - no translation error for Hindi documents
@@ -244,13 +244,13 @@ Ends with an **exported evaluation report** - real data, no mocks, under 10 minu
 ## Tech Stack Summary
 
 ```
-Document Parsing   : Apache Tika · Tesseract 5.0 · OpenCV · spaCy
-LLM / Reasoning    : Mistral-7B (Ollama) - runs locally, free
+Document Parsing   : PyMuPDF · Tesseract 5.0 · OpenCV · spaCy
+LLM / Reasoning    : llama-3.3-70b
 Semantic Matching  : sentence-transformers MiniLM - runs on CPU, free
-Indian Languages   : IndicTrans2 (AI4Bharat) · MuRIL (Google) - both free
+Indian Languages   : IndicTrans2 (AI4Bharat) · MuRIL (Google) - both free (For Future)
 Backend            : FastAPI · Celery · Redis · PostgreSQL
 Frontend           : Streamlit (prototype) / React (production)
-Deployment         : Docker Compose · NIC MeghRaj / Local Server / Laptop
+Deployment         : Docker Compose · NIC MeghRaj / Local Server / Laptop (For Future)
 ```
 
 ---
